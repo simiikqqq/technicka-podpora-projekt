@@ -1,4 +1,4 @@
-const USE_BACKEND = false;
+const USE_BACKEND = true;
 
 const BACKEND_URL = "https://technicka-podpora-projekt-2.onrender.com/";
 const STUDENT_ID = "Novak_Simon_4IT";
