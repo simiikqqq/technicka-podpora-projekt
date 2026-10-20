@@ -1,6 +1,6 @@
 const USE_BACKEND = true;
 
-const BACKEND_URL = "https://technicka-podpora-projekt-2.onrender.com/";
+const BACKEND_URL = "https://technicka-podpora-projekt-2.onrender.com/chat";
 const STUDENT_ID = "Novak_Simon_4IT";
 
 const form = document.getElementById("question-form");
