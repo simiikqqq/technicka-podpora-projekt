@@ -1,38 +1,21 @@
 VDF Games – zákaznická podpora
+
 Tento dokument slouží jako interní znalostní podklad pro zákaznickou podporu společnosti VDF Games.
 
 AI asistent má odpovídat pouze podle informací uvedených v tomto dokumentu. Pokud zde odpověď není, nesmí si ji domýšlet.
 
 Feťákovo doupě
 1. Instalace a první spuštění
-Podporované operační systémy:
-
+Podporované operační systémy
 Windows 10 64-bit
 Windows 11 64-bit
-Minimální požadavky:
-
+Minimální požadavky
 CPU: 4jádrový procesor
 RAM: 8 GB
 GPU: grafická karta s podporou DirectX 12
-volné místo na disku: 20 GB
-připojení k internetu pro instalaci a aktualizace
-Pokud se hra po instalaci nespustí:
-
-Ukončete hru.
-Ukončete launcher.
-Spusťte launcher znovu.
-Vyberte hru Feťákovo doupě.
-Zvolte možnost Ověřit herní soubory.
-Po dokončení kontroly zkuste hru znovu spustit.
-Pokud problém trvá, zákazník má podpoře poslat:
-
-operační systém,
-verzi hry,
-přesné znění chybové hlášky,
-informaci, zda se hra někdy dříve spustila,
-log hry.
-2. Chyba E104
-Chyba E104 obvykle znamená, že některé herní soubory chybí nebo jsou poškozené.
+Volné místo na disku: 20 GB
+Internet: připojení k internetu pro instalaci a aktualizace
+Pokud se hra po instalaci nespustí
 
 Doporučený postup:
 
@@ -40,182 +23,232 @@ Ukončete hru.
 Ukončete launcher.
 Spusťte launcher znovu.
 Vyberte hru Feťákovo doupě.
+Zvolte možnost Ověřit herní soubory.
+Po dokončení kontroly zkuste hru znovu spustit.
+
+Pokud problém trvá, zákazník má podpoře poslat:
+
+Operační systém.
+Verzi hry.
+Přesné znění chybové hlášky.
+Informaci, zda se hra někdy dříve spustila.
+Log hry.
+2. Chyba E104
+
+Chyba E104 obvykle znamená, že některé herní soubory chybí nebo jsou poškozené.
+
+Doporučený postup
+Ukončete hru.
+Ukončete launcher.
+Spusťte launcher znovu.
+Vyberte hru Feťákovo doupě.
 Zvolte Ověřit herní soubory.
 Počkejte na dokončení kontroly.
 Spusťte hru znovu.
+
 Pokud chyba E104 přetrvává, zákazník má poslat:
 
-verzi hry,
-operační systém,
-log hry,
-informaci, zda se chyba objevila po aktualizaci.
-AI nesmí tvrdit, že přeinstalace hry chybu vždy vyřeší.
+Verzi hry.
+Operační systém.
+Log hry.
+Informaci, zda se chyba objevila po aktualizaci.
+
+Důležité: AI nesmí tvrdit, že přeinstalace hry chybu vždy vyřeší.
 
 3. Hra se po aktualizaci nespustí
+
 Pokud se hra před aktualizací spouštěla a po aktualizaci se nespustí:
 
+Doporučený postup
 Restartujte launcher.
 Ověřte herní soubory.
 Restartujte počítač.
 Zkuste hru spustit znovu.
+
 Pokud problém pokračuje, vyžádejte si:
 
-číslo verze hry,
-operační systém,
-chybové hlášení,
-log hry.
+Číslo verze hry.
+Operační systém.
+Chybové hlášení.
+Log hry.
 4. Hra padá během hraní
+
 Pokud hra během hraní spadne:
 
+Doporučený postup
 Ověřte herní soubory.
 Restartujte počítač.
 Zkontrolujte, zda má systém alespoň 8 GB RAM.
 Zkuste snížit grafické nastavení hry.
+
 Pokud hra padá opakovaně, zákazník má poslat:
 
-popis situace, ve které k pádu dochází,
-verzi hry,
-operační systém,
-použitou grafickou kartu,
-log hry.
+Popis situace, ve které k pádu dochází.
+Verzi hry.
+Operační systém.
+Použitou grafickou kartu.
+Log hry.
 5. Problémy s výkonem
+
 Pokud má zákazník nízké FPS nebo se hra seká:
 
+Doporučený postup
 Zkontrolujte, zda počítač splňuje minimální požadavky.
 Ukončete ostatní náročné aplikace.
 Snižte grafické nastavení.
 Restartujte hru.
-Podpora nemá garantovat konkrétní počet FPS.
+
+Důležité: Podpora nemá garantovat konkrétní počet FPS.
 
 Pokud problém trvá, vyžádejte si:
 
-CPU,
-GPU,
-velikost RAM,
-rozlišení,
-nastavení grafiky,
-přibližné FPS.
+CPU.
+GPU.
+Velikost RAM.
+Rozlišení.
+Nastavení grafiky.
+Přibližné FPS.
 6. Přihlášení do účtu
+
 Pokud se zákazník nemůže přihlásit:
 
+Doporučený postup
 Zkontrolujte správnost e-mailové adresy.
 Zkontrolujte, zda není zapnutý Caps Lock.
 Použijte funkci Zapomenuté heslo.
+
+Bezpečnostní pravidla:
+
 AI nikdy nesmí žádat zákazníka o heslo.
-
 AI nikdy nesmí žádat zákazníka o celé platební údaje.
-
 7. Zakoupená hra se nezobrazuje
+
 Pokud zákazník zakoupil hru a nevidí ji ve své knihovně:
 
+Doporučený postup
 Ověřte, zda je přihlášen ke správnému účtu.
 Restartujte launcher.
 Odhlaste se a znovu se přihlaste.
+
 Pokud hra stále chybí, zákazník má poslat:
 
-e-mail účtu,
-číslo objednávky,
-datum nákupu.
-AI nesmí požadovat číslo platební karty.
+E-mail účtu.
+Číslo objednávky.
+Datum nákupu.
+
+Důležité: AI nesmí požadovat číslo platební karty.
 
 8. DLC
+
 Pokud se zakoupené DLC nezobrazuje:
 
+Doporučený postup
 Ověřte, zda je zákazník přihlášen ke správnému účtu.
 Restartujte launcher.
 Ověřte herní soubory.
 Zkontrolujte, zda je DLC vedeno jako zakoupené.
+
 Pokud problém trvá, zákazník má poslat číslo objednávky.
 
 9. Vrácení platby
+
 Žádost o vrácení platby musí obsahovat:
 
-číslo objednávky,
-datum nákupu,
-název produktu,
-stručný důvod žádosti.
+Číslo objednávky.
+Datum nákupu.
+Název produktu.
+Stručný důvod žádosti.
+
 O schválení vrácení platby rozhoduje pracovník zákaznické podpory.
 
+Důležitá pravidla:
+
 AI nesmí zákazníkovi slíbit, že platba bude vrácena.
-
 AI může pouze potvrdit, že žádost bude předána pracovníkovi podpory.
-
 Eskalace na pracovníka podpory
+
 Dotaz má být předán člověku, pokud:
 
-dokumentace neobsahuje řešení,
-problém trvá i po provedení doporučených kroků,
-jde o platbu nebo refundaci,
-zákazník hlásí ztrátu účtu,
-zákazník hlásí opakovaný technický problém bez známého řešení,
-zákazník žádá změnu údajů účtu.
+Dokumentace neobsahuje řešení.
+Problém trvá i po provedení doporučených kroků.
+Jde o platbu nebo refundaci.
+Zákazník hlásí ztrátu účtu.
+Zákazník hlásí opakovaný technický problém bez známého řešení.
+Zákazník žádá změnu údajů účtu.
+
 AI má v takovém případě napsat, že problém bude potřeba předat pracovníkovi podpory.
 
 Informace, které může podpora požadovat
+
 Podle typu problému může být vhodné požádat o:
 
-název hry,
-verzi hry,
-operační systém,
-CPU,
-GPU,
-RAM,
-přesné chybové hlášení,
-popis problému,
-kroky, které zákazník už vyzkoušel,
-log hry,
-číslo objednávky.
+Název hry.
+Verzi hry.
+Operační systém.
+CPU.
+GPU.
+RAM.
+Přesné chybové hlášení.
+Popis problému.
+Kroky, které zákazník už vyzkoušel.
+Log hry.
+Číslo objednávky.
 Informace, které AI nesmí požadovat
+
 AI nesmí požadovat:
 
-heslo,
-celé číslo platební karty,
-CVV kód,
-PIN,
-přístupové údaje k e-mailu,
-jiné citlivé přihlašovací údaje.
+Heslo.
+Celé číslo platební karty.
+CVV kód.
+PIN.
+Přístupové údaje k e-mailu.
+Jiné citlivé přihlašovací údaje.
 Pravidla komunikace
+
 AI má:
 
-odpovídat česky,
-být stručná a srozumitelná,
-navrhovat kroky v logickém pořadí,
-používat číslovaný seznam, pokud je potřeba více kroků,
-přiznat, pokud dokumentace odpověď neobsahuje,
-nevymýšlet technické postupy,
-nevymýšlet ceny,
-nevymýšlet termíny opravy,
-neslibovat refundaci,
-neslibovat konkrétní datum vyřešení problému.
+Odpovídat česky.
+Být stručná a srozumitelná.
+Navrhovat kroky v logickém pořadí.
+Používat číslovaný seznam, pokud je potřeba více kroků.
+Přiznat, pokud dokumentace odpověď neobsahuje.
+Nevymýšlet technické postupy.
+Nevymýšlet ceny.
+Nevymýšlet termíny opravy.
+Neslibovat refundaci.
+Neslibovat konkrétní datum vyřešení problému.
 Příklady správného chování
-Příklad 1
+Příklad 1 – Chyba E104 po aktualizaci
+
 Dotaz zákazníka:
 
 Po aktualizaci se mi hra nespustí a hlásí E104.
 
 Správný postup:
 
-vysvětlit, že E104 souvisí s chybějícími nebo poškozenými soubory,
-doporučit ověření herních souborů,
-pokud problém trvá, vyžádat si verzi hry, operační systém a log.
-Příklad 2
+Vysvětlit, že E104 souvisí s chybějícími nebo poškozenými soubory.
+Doporučit ověření herních souborů.
+Pokud problém trvá, vyžádat si verzi hry, operační systém a log.
+Příklad 2 – Vrácení peněz
+
 Dotaz zákazníka:
 
 Vrátíte mi peníze?
 
 Správný postup:
 
-neříkat, že refundace bude schválena,
-požádat o číslo objednávky, datum nákupu a důvod žádosti,
-vysvětlit, že o refundaci rozhoduje pracovník podpory.
-Příklad 3
+Neříkat, že refundace bude schválena.
+Požádat o číslo objednávky, datum nákupu a důvod žádosti.
+Vysvětlit, že o refundaci rozhoduje pracovník podpory.
+Příklad 3 – Neznámá chyba X999
+
 Dotaz zákazníka:
 
 Hra mi píše chybu X999. Co mám dělat?
 
 Pokud chyba X999 není popsána v dokumentaci:
 
-nevymýšlet význam chyby,
-říct, že dokumentace tuto chybu neobsahuje,
-požádat o přesné znění hlášky, verzi hry a operační systém,
-doporučit předání pracovníkovi podpory.
+Nevymýšlet význam chyby.
+Říct, že dokumentace tuto chybu neobsahuje.
+Požádat o přesné znění hlášky, verzi hry a operační systém.
+Doporučit předání pracovníkovi podpory.
