@@ -1,3 +1,4 @@
+
 import os
 from pathlib import Path
 
@@ -8,7 +9,7 @@ from openai import OpenAI
 
 # ============================================================
 # VDF Games Support Tool
-# Backend: Flask + Render + OpenAI Responses API
+# Backend: Flask + Render + Groq API
 # ============================================================
 
 app = Flask(__name__)
@@ -20,10 +21,13 @@ app.config["MAX_CONTENT_LENGTH"] = 32 * 1024
 # 1. Proměnné prostředí
 # ------------------------------------------------------------
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
 
-client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
+client = OpenAI(
+    api_key=GROQ_API_KEY,
+    base_url="https://api.groq.com/openai/v1"
+) if GROQ_API_KEY else None
 
 
 # ------------------------------------------------------------
@@ -74,8 +78,8 @@ def home():
 def health():
     return jsonify({
         "status": "ok",
-        "openai_key": bool(OPENAI_API_KEY),
-        "openai_model": bool(OPENAI_MODEL),
+        "groq_key": bool(GROQ_API_KEY),
+        "groq_model": bool(GROQ_MODEL),
         "documentation": bool(documentation)
     })
 
@@ -102,14 +106,14 @@ def chat():
             "error": "Dotaz je příliš dlouhý."
         }), 400
 
-    if not OPENAI_API_KEY or client is None:
+    if not GROQ_API_KEY or client is None:
         return jsonify({
-            "error": "Na serveru chybí OPENAI_API_KEY."
+            "error": "Na serveru chybí GROQ_API_KEY."
         }), 500
 
-    if not OPENAI_MODEL:
+    if not GROQ_MODEL:
         return jsonify({
-            "error": "Na serveru chybí OPENAI_MODEL."
+            "error": "Na serveru chybí GROQ_MODEL."
         }), 500
 
     if not documentation:
@@ -138,7 +142,7 @@ DOTAZ ZÁKAZNÍKA:
 
     try:
         response = client.responses.create(
-            model=OPENAI_MODEL,
+            model=GROQ_MODEL,
             instructions=INSTRUCTIONS,
             input=prompt
         )
@@ -155,7 +159,7 @@ DOTAZ ZÁKAZNÍKA:
         })
 
     except Exception as error:
-        print("OpenAI API error:", repr(error))
+        print("Groq API error:", repr(error))
 
         return jsonify({
             "error": "Nepodařilo se vytvořit odpověď podpory."
@@ -172,5 +176,5 @@ if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
         port=port,
-        debug=True
+        debug=False
     )
