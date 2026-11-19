@@ -1,35 +1,240 @@
-body {
-    font-family: system-ui, sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    line-height: 1.5;
-  }
-  
-  h1 {
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  textarea,
-  input[type="email"] {
-    width: 100%;
+
+/* ==========================================================
+   VDF GAMES – TECHNICKÁ PODPORA
+   Moderní světlý design
+   ========================================================== */
+
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --dark: #111827;
+    --text: #334155;
+    --muted: #64748b;
+    --background: #f1f5f9;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --radius: 14px;
+    --shadow: 0 10px 35px rgba(15, 23, 42, 0.07);
+}
+
+* {
     box-sizing: border-box;
-    margin: 5px 0 15px 0;
-    padding: 8px;
-  }
-  
-  button {
-    padding: 8px 16px;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 55px 24px;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* HLAVNÍ NADPIS */
+
+h1 {
+    color: var(--dark);
+    font-size: clamp(27px, 5vw, 36px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 0 0 10px;
+}
+
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 30px;
+    background: var(--primary);
+    border-radius: 5px;
+    margin-right: 12px;
+    vertical-align: -3px;
+}
+
+body > p {
+    color: var(--muted);
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+
+/* FORMULÁŘ */
+
+#question-form {
+    background: var(--surface);
+    padding: 27px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+label {
+    display: block;
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+textarea,
+input[type="email"] {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--border);
+    background: #f8fafc;
+    border-radius: 9px;
+    padding: 13px 15px;
+    margin: 0 0 20px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--dark);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s,
+        background 0.2s;
+}
+
+textarea {
+    min-height: 125px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #94a3b8;
+}
+
+textarea:focus,
+input[type="email"]:focus {
+    background: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* TLAČÍTKO */
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 9px;
+    background: var(--primary);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
     cursor: pointer;
-  }
-  
-  #answer {
-    border: 1px solid #ccc;
-    padding: 10px;
-    min-height: 80px;
-    background: #f9f9f9;
+    transition: background 0.2s, transform 0.2s,
+        box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+button:hover:not(:disabled) {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* ODPOVĚĎ PODPORY */
+
+h2 {
+    color: var(--dark);
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 38px 0 15px;
+}
+
+#answer {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 25px;
+    min-height: 110px;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.85;
     white-space: pre-wrap;
-  }
+    overflow-wrap: anywhere;
+    box-shadow: var(--shadow);
+}
+
+/* Vzhled textu a zvýraznění v odpovědi */
+
+#answer strong,
+#answer b {
+    color: var(--dark);
+    font-weight: 750;
+}
+
+#answer em {
+    color: var(--primary);
+}
+
+#answer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* RESPONZIVITA */
+
+@media (max-width: 600px) {
+    body {
+        padding: 30px 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #question-form {
+        padding: 20px;
+    }
+
+    #answer {
+        padding: 19px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}
